@@ -1,0 +1,14 @@
+name: PR checks
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review, labeled]
+    branches: [main, release-*, feature-*, tmp-*]
+
+permissions: {}
+
+jobs:
+  stub:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "stand-in for qvac's PR checks"
